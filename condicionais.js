@@ -70,7 +70,176 @@ console.log(x > 0 && x < 7)
 const idade2 = 17
 
 if (idade2 >= 18) {
-    console.log("Beber cerveja")
+    console.log("Beber cerveja");
 } else {
     console.log("Beber refrigerante")
+}
+
+if (idade2 >= 18) console.log("Beber cerveja");
+else console.log("Agua")
+
+const num = 10
+
+if (num >= 0) {
+    console.log("Numero positivo")
+}
+
+const idade3 = 6
+
+if (idade3 >= 18) {
+    console.log("Pode votar")
+} else {
+    console.log("Não pode votar")
+}
+
+const idade4 = 75
+
+if (idade4 <= 12) {
+    console.log("Criança")
+}
+
+if (idade4 > 12 && idade4 <= 17) {
+    console.log("Adolescente")
+}
+
+if (idade4 > 17 && idade4 <= 59) {
+    console.log("Adulto")
+}
+
+if (idade4 >= 60) {
+    console.log("Idoso")
+}
+
+// else if
+
+
+const idade5 = 10
+
+if (idade5 <= 12) {
+    console.log("Criança")
+} else if (idade5 <= 17) {
+    console.log("Adolescente")
+} else if (idade5 <= 59) {
+    console.log("Adulto")
+} else {
+    console.log("Idoso")
+}
+
+if (idade5 <= 12) {
+    console.log("Criança")
+} else {
+    if (idade5 <= 17) {
+        console.log("Adolescente")
+    } else {
+        if (idade5 <= 59) {
+            console.log("Adulto")
+        } else {
+            console.log("Idoso")
+        }
+    }
+}
+
+const num1 = 15
+
+if ((num1 >= 10 && num1 <= 20) || (num1 >= 40 && num1 <= 50)) {
+    console.log(true)
+} else {
+    console.log(false)
+}
+
+const num2 = 998
+
+if ((num2 % 2) === 0) {
+    console.log("é par")
+} else {
+    console.log("é impar")
+}
+
+const nota = 2
+
+if (nota > 7) {
+    console.log("Aprovado")
+} else if (nota > 4) {
+    console.log("Recuperação")
+} else {
+    console.log("Reprovado")
+}
+
+const dia = 1
+
+switch (dia) {
+    case 1:
+        console.log("Domingo")
+        break
+    case 2:
+        console.log("Segunda")
+    case 9:
+        console.log("Terça")
+        break
+    default:
+        console.log("Sei lá")
+        break
+}
+
+const mes = 90
+
+switch (mes) {
+    case 1:
+        console.log("Janeiro")
+        break
+    case 2:
+        console.log("Fevereiro")
+        break
+    case 3:
+        console.log("Março")
+        break
+    case 4:
+        console.log("Abril")
+        break
+    case 5:
+        console.log("Maio")
+        break
+    case 6:
+        console.log("Junho")
+        break
+    case 7:
+        console.log("Julho")
+        break
+    case 8:
+        console.log("Agosto")
+        break
+    case 9:
+        console.log("Setembro")
+        break
+    case 10:
+        console.log("Outubro")
+        break
+    case 11:
+        console.log("Novembro")
+        break
+    case 12:
+        console.log("Dezembro")
+        break
+    default:
+        console.log("Sei lá")
+}
+
+const nota1 = "F"
+
+switch (nota1) {
+    case 'A':
+        console.log("Excelente")
+        break
+    case 'B':
+        console.log("Bom")
+        break
+    case 'C':
+        console.log("Razoável")
+        break
+    case 'D':
+        console.log("Insuficiente")
+        break
+    case 'F':
+        console.log("Reprovado")
+        break
 }
