@@ -173,7 +173,7 @@ switch (dia) {
         break
     case 2:
         console.log("Segunda")
-    case 9:
+    case 3:
         console.log("Terça")
         break
     default:
@@ -241,5 +241,61 @@ switch (nota1) {
         break
     case 'F':
         console.log("Reprovado")
+        break
+}
+
+if (10 > 1) {
+    console.log("Caso verdade")
+} else if (3 < 10) {
+    console.log("Se falso")
+} else {
+
+}
+
+const valor = 10;
+const moeda = 'Libra'
+let result;
+
+switch (moeda) {
+    case 'Dolar':
+        result = (valor * 2)
+        break
+    case 'Euro':
+        result = (valor * 2)
+        break
+    case 'Real':
+        result = (valor * 1.2)
+        break
+    case 'Libra':
+        result = (valor * 2.3)
+        break
+}
+
+console.log(result)
+
+
+
+const code = 15
+
+switch (code) {
+    case 1:
+    case 2:
+    case 3:
+        console.log("Ligar/desligar")
+        break
+    case 10:
+        console.log("Aumentar volume")
+        break
+    case 11:
+        console.log("Diminuir volume")
+        break
+    case 20:
+    case 21:
+    case 22:
+        console.log("Avançar canal")
+        break
+    case 15:
+    case 30:
+        console.log("Voltar canal")
         break
 }
