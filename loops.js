@@ -108,3 +108,15 @@ for (let i = 0; i < size; i++) {
     }
     console.log(linha)
 }
+
+let num3 = 1
+while (num3 < 10) {
+    console.log(num3, "Teste")
+    num3++ // num3 += 1 -> num3 = num3 + 1
+}
+
+let num4 = 2
+do {
+    console.log("Teste Teste")
+    num4++
+} while (num4 < 5)
