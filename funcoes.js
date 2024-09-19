@@ -111,9 +111,14 @@ const calcMediaPonderada = function (n1, n2, n3) {
     return (n1 * 5 + n2 * 3 + n3 * 2) / 10
 }
 
+const calcMediaIgor = function (n1, n2, n3) {
+    return 10
+}
+
 const calcMedia = function (n1, n2, n3, funcaoMedia) {
     return funcaoMedia(n1, n2, n3)
 }
 
 console.log(calcMedia(8, 10, 6, calcMediaAritimetica))
 console.log(calcMedia(8, 10, 6, calcMediaPonderada))
+console.log(calcMedia(0, 0, 0, calcMediaIgor))
