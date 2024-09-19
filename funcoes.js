@@ -122,3 +122,19 @@ const calcMedia = function (n1, n2, n3, funcaoMedia) {
 console.log(calcMedia(8, 10, 6, calcMediaAritimetica))
 console.log(calcMedia(8, 10, 6, calcMediaPonderada))
 console.log(calcMedia(0, 0, 0, calcMediaIgor))
+
+const soma2 = function (a, b) {
+    return a + b
+}
+
+const subtracao2 = function (a, b) {
+    return a - b
+}
+
+const multiplicacao2 = function (a, b) {
+    return a * b
+}
+
+const divisao2 = function (a, b) {
+    return a / b
+}
