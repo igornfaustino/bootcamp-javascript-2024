@@ -138,3 +138,96 @@ const multiplicacao2 = function (a, b) {
 const divisao2 = function (a, b) {
     return a / b
 }
+
+function teste2() {
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+    console.log("Teste")
+}
+
+teste2()
+
+
+function calcMedia2(n1, n2) {
+    const mediaFunc = (n1 + n2) / 2
+    let x = 2
+    console.log(x)
+    return mediaFunc
+}
+
+const mediaFunc = calcMedia2(10, 5)
+console.log(mediaFunc)
+
+// f(x) = x + 2
+// f(2) = 2 + 2 => 4
+// f(8) = 8 + 2 => 10
+
+
+console.log(parseInt(2.3))
+
+const funcSemNome = function () {
+    console.log("Minha função sem nome")
+}
+
+funcSemNome()
+
+function math(a, b, op) {
+    return op(a, b)
+}
+
+function add(a, b) {
+    return a + b
+}
+console.log(math(3, 2, function (a, b) {
+    console.log(a, b)
+}))
+
+const arrowFunc = () => {
+    console.log("Arrow function")
+}
+
+arrowFunc()
+
+console.log(math(3, 2, (a, b) => {
+    return a + b
+}))
+
+const pow = (x) => x ** 2
+/**
+ * const pow = (x) => {
+ *      return x ** 2
+ * }
+ */
+
+
+console.log(pow(9))
+
+const f = (x) => x + 2
+
+console.log(f(8))
+
+console.log(math(3, 2, (a, b) => a + b))
+
+
+const soma3 = (a, b) => a + b
+const sub3 = (a, b) => a - b
+const mult3 = (a, b) => a * b
+const div3 = (a, b) => a / b
+
+console.log(soma3(10, 5))
+console.log(sub3(10, 5))
+console.log(mult3(10, 5))
+console.log(div3(10, 5))
