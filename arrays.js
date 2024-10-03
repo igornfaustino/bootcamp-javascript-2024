@@ -89,3 +89,62 @@ const findIndex2 = (arr, ehOValorEsperado) => {
 }
 
 console.log(findIndex2(nums2, ehImpar))
+
+
+let teste = [10, 9, 10, 1, 2, 3, 4, 5, 6]
+
+let soma2 = 0
+for (let i = 0; i < teste.length; i++) {
+    const value = teste[i]
+    soma2 += value
+}
+console.log(soma2)
+
+
+teste.push(11)
+teste.unshift(11)
+
+console.log(teste)
+
+teste.pop()
+teste.shift()
+console.log(teste)
+
+const numeroImpar = (value) => value % 2 !== 0
+const idx = teste.findIndex(numeroImpar)
+console.log(idx)
+
+
+
+for (let i = 0; i < teste.length; i++) {
+    console.log(teste[i])
+}
+
+console.log("ForEach:")
+let soma3 = 0
+teste.forEach((value) => {
+    soma3 += value
+})
+console.log(soma3)
+
+const teste2 = teste.map((value) => {
+    return value + 2
+})
+console.log(teste)
+console.log(teste2)
+
+const media = [10, 4, 6, 7, 3]
+
+const foiAprovado = (media) => {
+    if (media >= 6) return true
+    else return false
+}
+
+const aprovados = media.map(foiAprovado)
+console.log(media)
+console.log(aprovados)
+
+for (let i = 0; i < media.length; i++) {
+    const aprovado = foiAprovado(media[i])
+    console.log(aprovado)
+}
