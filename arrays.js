@@ -55,3 +55,37 @@ for (let i = 0; i < nums.length; i++) {
 
 console.log("Soma dos numeros positivos é:", soma)
 console.log("qtd dos numeros negativos é:", qtdNumsNegativos)
+
+const nums2 = [10, 34, 78, 3, 7, 10, 2, 90, 9, 0]
+
+const n = 9
+let pos = -1
+for (let i = 0; i < nums2.length; i++) {
+    if (nums2[i] === n) pos = i
+}
+console.log(pos)
+
+const findIndex = (arr, n) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === n) return i
+    }
+    return -1
+}
+
+
+
+
+console.log(findIndex(nums2, 100))
+
+const ehImpar = (value) => value % 2 !== 0
+const pos2 = nums2.findIndex(ehImpar)
+console.log(pos2)
+
+const findIndex2 = (arr, ehOValorEsperado) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (ehOValorEsperado(arr[i])) return i
+    }
+    return -1
+}
+
+console.log(findIndex2(nums2, ehImpar))
