@@ -148,3 +148,13 @@ for (let i = 0; i < media.length; i++) {
     const aprovado = foiAprovado(media[i])
     console.log(aprovado)
 }
+
+const array = [1, 2, 3, 4, 5, 6]
+
+const novoArray = array.map((elemento) => elemento * 2)
+console.log(novoArray)
+
+console.log(media)
+media.forEach((value, idx) => {
+    console.log(`${idx}: ${value}`)
+})
