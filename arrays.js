@@ -158,3 +158,24 @@ console.log(media)
 media.forEach((value, idx) => {
     console.log(`${idx}: ${value}`)
 })
+
+const novoArray2 = array
+    .map((elemento) => elemento * elemento)
+console.log(novoArray2)
+
+const array2 = [1, 3, 5, 6, 8, 9]
+
+const findPar = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        const elemento = arr[i]
+        if (elemento % 2 === 0) return elemento
+    }
+}
+
+console.log(findPar(array2))
+
+const posicao = array2.findIndex((value) => value % 2 === 0)
+console.log(array2[posicao])
+
+const primeiroPar = array2.find((value) => value % 2 === 0)
+console.log(primeiroPar)
