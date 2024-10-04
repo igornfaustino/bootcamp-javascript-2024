@@ -191,3 +191,21 @@ console.log(arraySoImpar)
 arraySoImpar = array2.filter((value) => value % 2 !== 0)
 console.log(arraySoImpar)
 console.log(array2)
+
+const array3 = [1, 2, 2, -3, 4]
+
+const todosPositivo = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        const elemento = arr[i]
+        if (elemento < 0) return false
+    }
+    return true
+}
+
+console.log(todosPositivo(array3))
+
+const res = array3.every((value) => value >= 0)
+console.log(res)
+
+
+console.log(array3.some((value) => value >= 0))
