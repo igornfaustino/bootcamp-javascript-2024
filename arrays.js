@@ -163,7 +163,7 @@ const novoArray2 = array
     .map((elemento) => elemento * elemento)
 console.log(novoArray2)
 
-const array2 = [1, 3, 5, 6, 8, 9]
+let array2 = [1, 3, 5, 6, 8, 9]
 
 const findPar = (arr) => {
     for (let i = 0; i < arr.length; i++) {
@@ -179,3 +179,15 @@ console.log(array2[posicao])
 
 const primeiroPar = array2.find((value) => value % 2 === 0)
 console.log(primeiroPar)
+
+let arraySoImpar = []
+for (let i = 0; i < array2.length; i++) {
+    const elemento = array2[i]
+    if (elemento % 2 !== 0)
+        arraySoImpar.push(elemento)
+}
+console.log(arraySoImpar)
+
+arraySoImpar = array2.filter((value) => value % 2 !== 0)
+console.log(arraySoImpar)
+console.log(array2)
