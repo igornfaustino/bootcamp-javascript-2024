@@ -59,7 +59,6 @@ while (num2 < 1000) {
     console.log(num2)
 }
 
-
 let y = 10
 do {
     console.log("entrei")
@@ -87,7 +86,6 @@ while (resultado !== valor) {
     console.log("Resultado:", resultado)
 }
 console.log(`Levou ${qtdTentativas} para tirar o numero ${valor}`)
-
 
 for (let i = 0; i < 10; i++) {
     if (i === 5) break
