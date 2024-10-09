@@ -209,3 +209,28 @@ console.log(res)
 
 
 console.log(array3.some((value) => value >= 0))
+
+const arrTest = [1, 2, 3, 4, 5]
+
+console.log(arrTest[10])
+
+arrTest.forEach((value, idx) => {
+    console.log("idx:", idx, "value:", value)
+})
+
+const novoArrayTest = arrTest.map((value) => {
+    return value * 2
+})
+
+console.log(novoArrayTest)
+
+const arrayFiltrado = arrTest.filter((value) => {
+    return value % 2 === 0
+})
+
+const value = arrTest.find((value) => {
+    return value % 2 === 0
+})
+
+console.log(arrayFiltrado)
+console.log(value)
