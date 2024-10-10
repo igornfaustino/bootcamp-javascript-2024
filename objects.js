@@ -79,3 +79,63 @@ const teste = {
 teste.helloWorld()
 teste.helloWorld2()
 teste.helloWorld3()
+
+
+const carro = {
+    marca: "Honda",
+    modelo: "Civic",
+    ano: 2020,
+    descricao: () => {
+        return `${carro.marca} ${carro.modelo}, ${carro.ano}`
+    },
+}
+
+console.log(carro.descricao())
+
+const aluno = {
+    nome: "Carlos",
+    idade: 12,
+    notas: [8, 10, 5]
+}
+
+let soma = 0
+for (let i = 0; i < aluno.notas.length; i++) {
+    soma += aluno.notas[i] // soma = soma + notas[i]
+}
+
+const media = soma / aluno.notas.length
+
+console.log(media)
+
+// --------------------------------------
+
+soma = 0
+aluno.notas.forEach((nota) => {
+    soma += nota
+})
+console.log(soma / aluno.notas.length)
+
+const biblioteca = {
+    livros: [{
+        titulo: 'Senhor dos aneis',
+        autor: 'Tolkien',
+        ano: 2024
+    },
+    {
+        titulo: 'Senhor dos aneis O retornor do rei',
+        autor: 'Tolkien',
+        ano: 2024
+    },
+    {
+        titulo: 'Clube da luta',
+        autor: 'Tolkien',
+        ano: 2024
+    },
+    ]
+}
+
+
+const titulos = biblioteca.livros.map((livro) => {
+    return livro.titulo
+})
+console.log(titulos)
