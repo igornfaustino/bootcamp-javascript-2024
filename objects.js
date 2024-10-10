@@ -58,3 +58,24 @@ console.log(pessoa2)
 
 const test = [1, 2, 3]
 console.log(pessoa2["profissao"])
+
+
+const helloWorld = () => {
+    console.log("Hello World")
+}
+
+const teste = {
+    helloWorld: () => {
+        console.log("Hello World")
+    },
+    helloWorld2: () => {
+        console.log("Hello World 2")
+    },
+    helloWorld3: () => {
+        console.log("Hello World 3")
+    }
+}
+
+teste.helloWorld()
+teste.helloWorld2()
+teste.helloWorld3()
